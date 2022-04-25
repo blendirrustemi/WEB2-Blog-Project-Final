@@ -1,0 +1,149 @@
+/* removing any margin or padding it may have from different browsers */
+html{
+    margin: 0;
+    padding: 0;
+    padding-top: 120px;
+}
+/* wtyling for screens up to 1000 px */
+@media only screen and (max-width: 1000px){
+    /* the font family is set here, a background image is added, as well as a backgroudn color */
+    body{
+        font-family: 'Poppins', sans-serif;
+        background-image: url(pics/Blog-01.png);
+        background-size: 50%;
+        background-repeat: no-repeat;
+        background-position: 400px 350px;
+        background-color: #282a37;
+    }
+    
+    .add_post{
+        margin: 70px;
+    }
+    /* the main title of the page which is an h2 is styled here */
+    h2{
+        font-size: 200%;
+        color: white;
+    }
+    /* the title of the blog we want to post, an input box is styled here
+        size, borders, radius, margins, paddings, background color */
+    #title{
+        height: 40px;
+        border: none;
+        border-radius: 12px;
+        outline: none;
+        width: 300px;
+        margin: 10px 0 10px 0;
+        background-color: #313645;
+        box-shadow: -5px 5px 10px #313e53;
+    }
+    /* when you are clicking or writing on the input boxes a blue border apperas */
+    input:focus {
+        border: 3px solid #4286c7;
+    }
+    /* styling the placeholders on the input boxes, title and content */
+    ::placeholder{
+        color: white;
+        font-weight: 300;
+        font-family: 'Poppins', sans-serif;
+    }
+    /* styling of the input for the content of the blog */
+    #content{
+        height: 200px;
+        border-radius: 12px;
+        outline: none;
+        width: 300px;
+        margin: 10px 0 10px 0;
+        background-color: #313645;
+        box-shadow: -5px 5px 10px #313e53;
+        border: none;
+    }
+    /* the post blog button size, color, border, margins, font family etc. */
+    .post_button{
+        font-weight: 300;
+            font-family: 'Poppins', sans-serif;
+            color: white;
+            width: 200px;
+            height: 50px;
+            background-color: #4286c7;
+            margin: auto;
+            border: none;
+            border-radius: 10px;
+    }
+    /* when hovering above the post blog button a box shadow appears */
+    .post_button:hover{
+        box-shadow: -1px 1px 10px #6da9e0;
+    }
+}
+/* some minor changes are done when the size of the screen is bigger that 800px
+    mainly the size and positioning of the background image was fixed */
+@media only screen and (min-width: 800px) {
+    
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: url(pics/Blog-01.png);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: 600px 40px;
+    background-color: #282a37;
+    margin: 0;
+    padding: 0;
+}
+
+.add_post{
+    margin: 70px;
+}
+h2{
+    font-size: 200%;
+    color: white;
+}
+#title{
+    color: #fff;
+    height: 40px;
+    border: none;
+    border-radius: 12px;
+    outline: none;
+    width: 300px;
+    margin: 10px 0 10px 0;
+    background-color: #313645;
+    box-shadow: -5px 5px 10px #313e53;
+    font-size: 14px;
+}
+::placeholder{
+    color: white;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+}
+#content{
+    color: #fff;
+    padding: 12px;
+    height: 200px;
+    border-radius: 12px;
+    outline: none;
+    width: 300px;
+    margin: 10px 0 10px 0;
+    background-color: #313645;
+    box-shadow: -5px 5px 10px #313e53;
+    border: none;
+}
+.post_button{
+    font-weight: 300;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        width: 200px;
+        height: 50px;
+        background-color: #4286c7;
+        margin: auto;
+        border: none;
+        border-radius: 10px;
+        transition: .2s;
+}
+.post_button:hover{
+    box-shadow: -1px 1px 10px #6da9e0;
+}
+
+input{
+    box-sizing: border-box;
+    padding-left: 20px;
+}
+}

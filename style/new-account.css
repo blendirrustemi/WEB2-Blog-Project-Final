@@ -1,0 +1,458 @@
+/* Removing any styling so the page apperas the same in different browsers */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+
+/* The styling for the smallest screen size */
+@media only screen and (min-width: 481px){
+   /* Styling the body, adding a background image and fixing it's position
+        also the font to be used on the page */
+    body{
+        background-color: #282a37;
+        font-family: 'Poppins', sans-serif;
+        background-image: url(pics/01.png);
+        background-size: 270%;
+        background-repeat: no-repeat;
+        background-position: 30% 50%;
+        width: 100%;
+        padding-top: 120px;
+    }
+
+    /* The contaitner of the form is styled here */
+    .signup-container{
+        width: 40%;
+        /* border: 1px white solid; */
+        padding: 10px;
+    }
+    .signup-title{
+        color: white;
+        position: relative;
+        left: 20px;
+    }
+    /* The space between the input fields of the form */
+    .forms{
+        margin: 20px;
+    }
+    /* Styling of the individual input forms */
+    input{
+        height: 40px;
+        background-color: #313645;
+        border: none;
+        border-radius: 12px;
+        outline: none;
+        width: 300px;
+        padding: 10px;
+        color: #fff;
+    }
+    /* adding a colored border whenever you click on the input field */
+    input:focus {
+        border: 3px solid #4286c7;
+    }
+    /* Styling the text on the placeholders, font, size, padding, and color */
+    ::placeholder{
+        color: white;
+        font-weight: 300;
+        font-family: 'Poppins', sans-serif;
+    }
+    /* Styling the label of date of birth and gender */
+    label{
+        font-weight: 300;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+    }
+    /* The sign up button, size, color, font, position etc. */
+    .signup-button{
+        font-weight: 300;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        width: 200px;
+        height: 50px;
+        background-color: #4286c7;
+        display: block;
+        margin: auto;
+        margin-top: 30px;
+        position: relative;
+        left: 20px;
+    }
+    /* When hovering above the sign up button a glow appears */
+    .signup-button:hover{
+        box-shadow: -1px 1px 10px #6da9e0;
+    }
+
+    #dateofbirth{
+        width: 200px;
+        color: #fff;
+
+    }
+    
+}
+/* Styling with some chnages for a different screen resolution, making it responsive
+only the image size and position changes, along with display block of the signup form if the screen width is smaller than 1000px */
+@media only screen and (min-width: 769px){
+
+    body{
+        background-color: #282a37;
+        font-family: 'Poppins', sans-serif;
+        background-image: url(pics/01.png);
+        background-size: 200%;
+        background-repeat: no-repeat;
+        background-position: 40% 50%;
+        width: 100%;
+    }
+    .signup-container{
+        width: 40%;
+        /* border: 1px white solid; */
+        margin: 30px;
+        padding: 30px;
+    }
+    .signup-title{
+        color: white;
+        position: relative;
+        left: 20px;
+    }
+    .forms{
+        margin: 20px;
+    }
+    input{
+        height: 40px;
+        background-color: #313645;
+        border: none;
+        border-radius: 12px;
+        outline: none;
+        width: 300px;
+        padding: 10px;
+        color: #fff;
+    }
+    input:focus {
+        border: 3px solid #4286c7;
+    }
+    ::placeholder{
+        color: white;
+        font-weight: 300;
+        font-family: 'Poppins', sans-serif;
+    }
+    label{
+        font-weight: 300;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+    }
+    .signup-button{
+        font-weight: 300;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        width: 200px;
+        height: 50px;
+        background-color: #4286c7;
+        display: block;
+        margin: auto;
+        margin-top: 30px;
+        position: relative;
+        
+    }
+    .signup-button:hover{
+        box-shadow: -1px 1px 10px #6da9e0;
+    }
+    
+}
+
+
+@media only screen and (min-width: 1200px){
+
+    body{
+        background-color: #282a37;
+        font-family: 'Poppins', sans-serif;
+        background-image: url(pics/01.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: 40% 50%;
+        width: 100%;
+    }
+    .signup-container{
+        width: 40%;
+        /* border: 1px white solid; */
+        margin: 30px;
+        padding: 30px;
+    }
+    .signup-title{
+        color: white;
+        position: relative;
+        left: 20px;
+    }
+    .forms{
+        margin: 20px;
+    }
+    input{
+        height: 40px;
+        background-color: #313645;
+        border: none;
+        border-radius: 12px;
+        outline: none;
+        width: 300px;
+        color: #fff;
+    }
+    input:focus {
+        border: 3px solid #4286c7;
+    }
+    ::placeholder{
+        color: white;
+        /* padding: 10px; */
+        font-weight: 300;
+        font-family: 'Poppins', sans-serif;
+    }
+    label{
+        font-weight: 300;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+    }
+    .signup-button{
+        font-weight: 300;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        width: 200px;
+        height: 50px;
+        background-color: #4286c7;
+        margin-top: 30px;
+        position: relative;
+        left: -95px;
+    }
+    .signup-button:hover{
+        box-shadow: -1px 1px 10px #6da9e0;
+    }
+    #dateofbirth{
+        width: 200px;
+        color: #fff;
+
+    }
+}
+
+/* Styling with some chnages for a different screen resolution, making it responsive */
+@media only screen and (min-width: 1500px){
+
+    body{
+        background-color: #282a37;
+        font-family: 'Poppins', sans-serif;
+        background-image: url(pics/01.png);
+        background-size: 80%;
+        background-repeat: no-repeat;
+        background-position: right center;
+        width: 100%;
+    }
+    .signup-container{
+        width: 40%;
+        /* border: 1px white solid; */
+        margin: 70px 50px 100px 50px;
+        padding: 30px;
+    }
+    .signup-title{
+        color: white;
+        position: relative;
+        left: 20px;
+        margin-bottom: 50px;
+    }
+    .forms{
+        margin: 20px;
+    }
+    input{
+        height: 40px;
+        background-color: #313645;
+        border: none;
+        border-radius: 12px;
+        outline: none;
+        width: 220px;
+        color: #fff;
+    }
+    input:focus {
+        border: 3px solid #4286c7;
+    }
+    ::placeholder{
+        color: white;
+        /* padding: 10px; */
+        font-weight: 300;
+        font-family: 'Poppins', sans-serif;
+    }
+    label{
+        font-weight: 300;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+    }
+    .signup-button{
+        font-weight: 300;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        width: 200px;
+        height: 50px;
+        background-color: #4286c7;
+        display: block;
+        margin: auto;
+        position: relative;
+        left: 150px;
+        top: -15px;
+    }
+    .signup-button:hover{
+        box-shadow: -1px 1px 10px #6da9e0;
+    }
+    #surname{
+        float: right;
+        position: relative;
+        top: -59px;
+        left: -35px;
+    }
+    #email{
+        float: right;
+        left: 187px;
+        position: relative;
+    }
+    #date{
+        color: #fff;
+        float: right;
+        position: relative;
+        top: -110px;
+        left: -35px;
+    }
+    #password{
+        width: 465px;
+        position: relative;
+        top: -40px;
+    }
+    #username{
+        position: relative;
+        top: -40px;
+    }
+    #genderform{
+        position: relative;
+        top: -40px;
+    }
+}
+
+/* selecting the gender list input and sytling it */
+
+select {
+    background: #313645;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+
+
+
+
+
+/* Styling with some chnages for a different screen resolution, making it responsive */
+@media only screen and (min-width: 1600px){
+
+    body{
+        background-color: #282a37;
+        font-family: 'Poppins', sans-serif;
+        /* background-image: url(pics/01.png); */
+        background-size: 80%;
+        background-repeat: no-repeat;
+        background-position: right center;
+        margin: auto;
+        overflow: hidden;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .signup-container{
+        width: 40%;
+        /* border: 1px white solid; */
+        margin: 70px 50px 100px 50px;
+        padding: 30px;
+        max-width: 600px;
+    }
+    .signup-title{
+        color: white;
+        position: relative;
+        left: 20px;
+        margin-bottom: 50px;
+        font-size: 300%;
+    }
+    .forms{
+        margin: 20px;
+    }
+    input{
+        height: 40px;
+        background-color: #313645;
+        border: none;
+        border-radius: 12px;
+        outline: none;
+        width: 220px;
+        color: #fff;
+    }
+    input:focus {
+        border: 3px solid #4286c7;
+    }
+    ::placeholder{
+        color: white;
+        /* padding: 10px; */
+        font-weight: 300;
+        font-family: 'Poppins', sans-serif;
+    }
+    label{
+        font-weight: 300;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+    }
+    .signup-button{
+        font-weight: 300;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        width: 200px;
+        height: 50px;
+        background-color: #4286c7;
+        display: block;
+        margin: auto;
+        position: relative;
+        left: 20px;
+        top: -10px;
+    }
+    .signup-button:hover{
+        box-shadow: -1px 1px 10px #6da9e0;
+    }
+    #surname{
+        float: right;
+        position: relative;
+        top: -59px;
+        left: -35px;
+    }
+    #email{
+        float: right;
+        left: 187px;
+        position: relative;
+    }
+    #date{
+        float: right;
+        position: relative;
+        top: -112px;
+        left: -35px;
+        color: #fff;
+    }
+    #password{
+        width: 510px;
+        position: relative;
+        top: -40px;
+    }
+    #username{
+        position: relative;
+        top: -40px;
+    }
+    #genderform{
+        position: relative;
+        top: -40px;
+    }
+
+
+}
+
+.show-error{
+    color: #4286c7;
+    font-size: 18px;
+    font-weight: 200;
+}

@@ -1,0 +1,54 @@
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+/* Makes navbar stay on top while scrolling */
+.navup{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* the navigation of the page is done through a list of anchors styled here */
+.nav-list {
+    background: white;
+    box-shadow: 0px 0px 10px var(--clr-gray200);
+    margin: 0;
+    padding: 1rem 0;
+    border-radius: var(--radius);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* removing the list styling that is already give to it */
+.nav-item{
+    list-style: none;
+    margin-right: 2rem;
+}
+
+/* removing the text decoration of the anchors from the list */
+.nav-item a{
+    text-decoration: none;
+    color: black;
+    transition: .2s ease-in;
+}
+/* when hovering above the links the color changes */
+.nav-item a:hover{
+    color: #4286c7;
+}
+
+.nav-item:first-child{
+    margin-right: auto;
+    margin-left: 2rem;
+}
+/* the color is different fo rthe last element of the list, it is the name of the user */
+.color-user{
+    color: #4286c7;
+    font-weight: bold;
+}

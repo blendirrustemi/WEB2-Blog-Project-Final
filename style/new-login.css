@@ -1,0 +1,145 @@
+/* removing any styling so it apperas the same in different browsers */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/* a media query specific to the size from 100 to 800 px */
+@media only screen and (min-width: 100px) and (max-width: 800px){
+    /* removing margin and paddingform the entire page */
+    html{
+        margin: 0;
+        padding: 0;
+    }
+    /* adding a background color, margins, background image, background image positioning */
+    body{
+        background-color: #282a37;
+        font-family: 'Poppins', sans-serif;
+        background-image: url(pics/03.jpg);
+        background-size: 200%;
+        background-repeat: no-repeat;
+        background-position: 35% 10%;
+        margin: -5px;
+    }
+    /* the main log in container is aligned in the center */
+    .login-container{
+        margin: auto;
+        padding: 30px;
+        text-align: center;
+    }
+    /* styling for the username and password inputs
+        width, height, color, margins, removing border */
+    input{
+        height: 40px;
+        background-color: #313645;
+        border: none;
+        border-radius: 12px;
+        outline: none;
+        width: 300px;
+        margin: 10px 0 10px 0;
+    }
+    /* when you have clicked to write on the input field, meaning it si in focus a border of different color appears */
+    input:focus {
+        border: 3px solid #4286c7;
+    }
+    /* styling for the placeholders that are on the input boxes, username and password */
+    ::placeholder{
+        color: white;
+        padding: 10px;
+        font-weight: 100;
+        font-family: 'Poppins', sans-serif;
+    }
+    /* styling for the labels in front of the boxes */
+    label{
+        font-weight: 100;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+    }
+    /* styling of the log in button , size, margins, background color, font */
+    .login_button{
+        font-weight: 300;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        width: 200px;
+        height: 50px;
+        background-color: #4286c7;
+        margin: auto;
+    }
+    /* when hovering above the log in button a box shadow appears */
+    .login_button:hover{
+        box-shadow: -1px 1px 10px #6da9e0;
+    }
+    /* the main title of the page, size and color is set here */
+    .login_title{
+        color: white;
+        font-size: 300%;
+    }
+    /* when the password is enetered incorrectly or there is some sort of error it appeasr on this box, and the color will be light blue */
+    .error-box{
+        color: #4286c7;
+    }
+    }
+/* there are no changes to the form when the screen size getts bigger only some minor changes to the background image */
+@media only screen and (min-width: 800px){
+body{
+    background-color: #282a37;
+    font-family: 'Poppins', sans-serif;
+    background-image: url(pics/03.jpg);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: 100% 10%;
+    margin: 0;
+    padding: 0;
+}
+
+.login-container{
+    margin: 150px;
+}
+
+input{
+    height: 40px;
+    background-color: #313645;
+    border: none;
+    border-radius: 12px;
+    outline: none;
+    width: 300px;
+    margin: 10px 0 10px 0;
+    color: #fff;
+    padding: 10px;
+}
+input:focus {
+    border: 3px solid #12191f;
+}
+::placeholder{
+    color: white;
+    /* padding-left: 10px; */
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+}
+label{
+    font-weight: 100;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+.login_button{
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    width: 200px;
+    height: 50px;
+    background-color: #4286c7;
+    display: block;
+}
+.login_button:hover{
+    box-shadow: -1px 1px 10px #6da9e0;
+}
+.login_title{
+    color: white;
+    font-size: 300%;
+}
+.error-box{
+    color: #4286c7;
+}
+}

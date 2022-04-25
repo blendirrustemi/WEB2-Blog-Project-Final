@@ -1,0 +1,98 @@
+/* Removing any stayling it may have from different browsers */
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+  /* making the scroller go smoother */
+  html {
+    scroll-behavior: smooth;
+  }
+  /* removing any margins or paddings and creating a background linear gradient */
+  body {
+    margin: 0;
+    padding: 0;
+    padding-top: 120px;
+    background: linear-gradient(#282a37, #313e53);
+  }
+  /* setting the font family for the page to be Poppins */
+  body,
+  html {
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+  }
+  /* the main page div that contains all the blog posts, width, alignment */
+  .page-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    margin: 30px 0;
+    gap: 15px;
+    align-items: center;
+  }
+  /* individual blog posts, size, background color, box shadow of this div, text color etc. */
+  .posts {
+    border: 1px solid #4286c7;
+    padding: 1em;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    /* flex: 1 1 45%; */
+    width: clamp(300px, 45%, 90%);
+    background-color: #313645;
+    box-shadow: -5px 5px 10px #313e53;
+    border: none;
+    color: white;
+  }
+  
+  /* make the words move into a new line and not overflow from the conatiner */
+  .post-main{
+    word-break: break-all;
+  }
+/* the title of the page is styled here */
+  h2{
+      margin: 30px 0 30px 0;
+      text-align: center;
+      color: white;
+      font-size: 200%;
+  }
+  /* the buttons edit and delete bolgs are styled here, text color, background color, margins, padding, positioning */
+  .butoni{
+        font-weight: 300;
+            font-family: 'Poppins', sans-serif;
+            color: white;
+            width: 100px;
+            height: 30px;
+            background-color: #4286c7;
+            margin: 5px;
+            border: none;
+            border-radius: 10px;
+            display: inline;
+  }
+  /* making the edit post and delete post appear on the same line through float */
+  .edit-post{
+      float: left;
+  }
+  .del-post{
+      float: right;
+  }
+/* when hovering above the buttons a shadow appears */
+  .butoni:hover{
+    box-shadow: -1px 1px 10px #6da9e0;
+}
+  /* the styling for the date that is under the blog tytle, size and margins */
+.post-date{
+    font-size: 80%;
+    margin-top: 3px;
+}
+/* styling of the tile of the blogs */
+.post-title{
+    font-size: 150%;
+    margin: -30px 0 -30px 0;
+    color: #6da9e0;
+}
+/* the width of the containers of buttons is set here */
+.butonat{
+    width: 230px;
+}

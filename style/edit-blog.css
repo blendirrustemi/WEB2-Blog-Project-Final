@@ -1,0 +1,82 @@
+/* Removing styling to make it identical on all browsers */
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+/* Making the scroll go smoother */
+html {
+    scroll-behavior: smooth;
+}
+/* Setting the margins and paddings to 0 so content can be full width with no gaps on the sides
+    the background color gradient of the entire page is set here, and the font family */
+body {
+    margin: 0;
+    padding: 0;
+    padding-top: 150px;
+    background: linear-gradient(#282a37, #313e53);
+    font-family: 'Poppins', sans-serif;
+}
+/* centering the div */
+.add_post{
+    margin: auto;
+    text-align: center;
+}
+/* the title of this page is an h2 and its selected through this tag */
+h2{
+    color: white;
+    font-size: 200%;
+}
+/* The labels near the input boxes are displayed block not inline, margins and color change */
+label{
+    color: #4286c7;
+    display: block;
+    margin: 10px;
+}
+/* The title input box is styled here
+    The background color, box shadow, font needs to be specified again because it isn't inherited, size, padding etc. */
+#title{
+    background-color: #313645;
+    box-shadow: -5px 5px 10px #313e53;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    width: 600px;
+    height: 50px;
+    padding: 10px;
+    font-size: 16px;
+}
+/* The content input box for editing is styled here.
+    Everything from size, color, borders, shadows and font */
+#content{
+    background-color: #313645;
+    box-shadow: -5px 5px 10px #313e53;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    width: 600px;
+    height: 300px;
+    padding: 10px;
+}
+/* The edit button is styled here, again the font isn't inherited, the color, margins, border radius */
+.buton{
+    width: 100px;
+    height: 45px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #4286c7;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: 300;
+    margin: 20px;
+    transition: box-shadow 1.2s;
+}
+/* When hovering over the button a shadow of lighter color than the background appears */
+.buton:hover{
+    box-shadow: -1px 1px 10px #6da9e0;
+}
+

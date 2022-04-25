@@ -1,0 +1,109 @@
+/* remove native styling for different browsers */
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+  /* make the scrolling go smoother */
+  html {
+    scroll-behavior: smooth;
+  }
+  /* removing margins and paddings from the body container
+    adding a background image and making it appear jsut once */
+  body {
+    margin: 0;
+    padding: 0;
+    padding-top: 150px;
+    background-image: url(pics/02.jpg);
+    background-repeat: no-repeat;
+  }
+  /* setting the font family like in every other page  */
+  body,
+  html {
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+  }
+  /* the main container of the page alignemnet, margins, appearance */
+  .page-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    margin: 30px 0;
+    gap: 15px;
+    align-items: center;
+  }
+  /* the post div background color, size, box shadow, and  display */
+  .posts {
+    padding: 1em;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    /* flex: 1 1 45%; */
+    width: clamp(300px, 45%, 90%);
+    background-color: #313645;
+    box-shadow: -5px 5px 10px #313e53;
+    color: white;
+  }
+  /* make the text break into new lines and not overflow from the conatiner */
+  .post-main{
+    word-break: break-all;
+  }
+/* the date that shows under the tile of the post, decreasing size and setting margins */
+.post-date{
+    font-size: 80%;
+    margin-top: 3px;
+}
+/* The title of the post: size, margin and color */
+.post-title{
+    font-size: 200%;
+    margin: -30px 0 -30px 0;
+    color: #4286c7;
+}
+/* The submit comment button styling: width, height, margins, padding, alignment
+  font family and wight ahve to be specified again */
+.submit-btn{
+    width: 170px;
+    height: 45px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #4286c7;
+    border: none;
+    color: white;
+    display: block;
+    margin: 10px;
+    text-align: center;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+    transition: .2s;
+}
+/* a lighter box shadow apppears when hovering above the submit comment button */
+.submit-btn:hover{
+    box-shadow: -1px 1px 10px #6da9e0;
+}
+/* the input comment box styling
+  size, margin padding dispalying it block on top of the submit button, removing borders */
+.cmnt-area{
+    width: 300px;
+    height: 100px;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #313645;
+    display: block;
+    margin: 10px;
+    border: none;
+    font-size: 14px;
+    color: #fff;
+}
+/* Styling the placeholders that are on the input boxes */
+::placeholder{
+    color: white;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+}
+
+.post-comment{
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+    color: #4286c7;
+}

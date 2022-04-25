@@ -1,0 +1,79 @@
+/* SEtting the text decoration and box sizing for all browsers
+   Removing the native styling CSS has */
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+/* A smoother scrolling effect throught the page and on its all elements that are scrollable */
+html {
+    scroll-behavior: smooth;
+}
+/* Removing native margin and padding so the content can be full width from corner to corner */
+body {
+    margin: 0;
+    padding: 0;
+    padding-top: 120px;
+}
+/* Setting the background as a linear gradient and the font family that is used throught the page.
+If you set it at body or html, most of the text that is in the page will inherit it */
+body,
+html {
+    width: 100%;
+    background: linear-gradient(#282a37, #313e53);
+    font-family: 'Poppins', sans-serif;
+}
+/* The main division of the page is centered and divided here */
+.page-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    margin: 30px 0;
+    gap: 15px;
+    align-items: center;
+}
+/* The three individual divs are styled here, the background color, size, styling such as shadows, border radius etc. */
+.posts {
+    padding: 1em;
+    box-shadow: 0px 5px 10px #313e53;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    /* flex: 1 1 45%; */
+    width: clamp(300px, 45%, 90%);
+    background-color: #313645;
+}
+/* Styling so the text doesn't overflow from the container div but breaks into a new line */
+.post-main{
+    word-break: break-all;
+}
+/* I selected the title through the heading 3, changed the color to white and made it bigger */
+h3{
+    font-size: 150%;
+    color: white;
+    /* margin: 20px; */
+}
+/* Selected the paragraphs that are in the post-blog div, changed the color and the weight */
+.post-blog p{
+    color: white;
+    font-weight: 200;
+}
+/* Styling the buttons, color, size, border radius
+    The font family has to be specified again because it doesn't inherit it from body */
+.butoni{
+    margin: 10px 0 10px 0;
+    /* background-color: #313e53; */
+    background-color: #4286c7;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    width: 150px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+/* When hovering over the buttons, a shadow of lighter color appears */
+.butoni:hover{
+    box-shadow: -1px 1px 10px #6da9e0;
+}

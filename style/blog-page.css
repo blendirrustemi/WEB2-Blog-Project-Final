@@ -1,0 +1,115 @@
+/* Setting global style for different browsers */
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+  /* Making the scroll go smoother */
+  html {
+    scroll-behavior: smooth;
+  }
+  /* The native margins and paddings that it may have are removed and the background color is added here */
+  body {
+    margin: 0;
+    padding: 0;
+    background: #3b4a63; /*#303242
+    /* background: linear-gradient(#fff, rgb(197, 196, 196)); */
+  }
+  /* Setting the font family for the entire page */
+  body,
+  html {
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+  }
+  /* The page header that  consists of a background image and a big title in the middle
+     The size of the image is set here to 100% width by 700 pixels and the url specified */
+  .page-header{
+    width: 100%;
+    height: 400px;
+    background-image: url(pics/program.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  /* The title over the image header is styled here, 400% text size, it is centered
+     and added shadows so it is distingueshed more from the background image and more legible */
+  .page-header h2{
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-size: 400%;
+    position: relative;
+    top: 45%;
+    text-shadow: 3px 3px 20px black;
+  }
+  /* The division that contains all the blogs on the main page
+     Aligning items to center, width etc. */
+  .page-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    margin: 30px 0;
+    gap: 15px;
+    align-items: center;
+  }
+  /* Individual blogs and their width, height, background color, text, border */
+  .posts {
+    padding: 1em;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    /* flex: 1 1 45%; */
+    width: clamp(300px, 45%, 90%);
+    background-color: #313645;
+    box-shadow: -5px 5px 10px #33435c;
+    color: white;
+  }
+  
+  /* MAking the text appear on a new line and not overflow from the container */
+  .post-main{
+    word-break: break-all;
+  }
+
+  
+/* Selecting the date of each post and reducing its size */
+.post-date{
+    font-size: 80%;
+    margin-top: 3px;
+}
+/* The title of each post, increasing size, changing margins and color */
+.post-title{
+    font-size: 150%;
+    margin: -30px 0 -30px 0;
+    color: #4286c7;
+}
+/* Selecting the text anchor within the REad more div. */
+.btn-comment a{
+  color: white;
+  font-weight: 800;
+  float: left;
+}
+/* The styling for the arrow closeby the Read more sign
+   It has to appear inline with the Read more text */
+.btn-comment img{
+  width: 40px;
+  float:right;
+  position: relative;
+  left: 10px;
+}
+/* Styling of the Read more sign to make it look like a button */
+.btn-comment{
+  width: 170px;
+  height: 45px;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #4286c7;
+}
+/* When hovering above the button a box shadow appears */
+.btn-comment:hover{
+  box-shadow: -1px 1px 10px #6da9e0;
+}
+/* Position of the text when there are no */
+.noblog{
+  padding-top: 150px;
+  text-align: center;
+}

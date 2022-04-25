@@ -35,7 +35,7 @@
         $post = query( $db, $p_id );
 
         $comment = $_POST['comment'];
-        $comment_query = "INSERT INTO comments(Comment, P_ID) VALUES('$comment', '$p_id')";
+        $comment_query = "INSERT INTO comments(Comment, P_ID, username) VALUES('$comment', '$p_id', '$username')";
         if ( !mysqli_query( $db, $comment_query ) ) {
             echo "Error: " . mysqli_errno( $db );
         }
@@ -82,7 +82,7 @@
             <!-- For loop for comments -->
             <?php foreach ( $comments as $comment ): ?>
             <div class="post-comment">
-                <!-- <p><strong><?php echo $name?></strong></p> -->
+                <p><strong><?php echo $comment['username']?></strong></p>
                 <p><?php echo $comment['Comment'] ?></p>
             </div>
             <?php endforeach; ?>

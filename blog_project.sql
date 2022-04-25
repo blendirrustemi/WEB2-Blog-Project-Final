@@ -36,6 +36,7 @@ CREATE TABLE IF NOT EXISTS `comments` (
     `C_ID` int NOT NULL PRIMARY KEY AUTO_INCREMENT,
     `Comment` text NOT NULL,
     `P_ID` int,
+    `username` varchar,
     FOREIGN KEY (`P_ID`) REFERENCES `Posts` (`P_ID`)
 );
 

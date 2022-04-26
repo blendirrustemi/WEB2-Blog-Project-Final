@@ -2,7 +2,6 @@
 html{
     margin: 0;
     padding: 0;
-    padding-top: 120px;
 }
 /* wtyling for screens up to 1000 px */
 @media only screen and (max-width: 1000px){
@@ -14,6 +13,7 @@ html{
         background-repeat: no-repeat;
         background-position: 400px 350px;
         background-color: #282a37;
+        padding-top: 120px;
     }
     
     .add_post{
@@ -87,7 +87,7 @@ body{
     background-position: 600px 40px;
     background-color: #282a37;
     margin: 0;
-    padding: 0;
+    padding-top: 120px;
 }
 
 .add_post{
@@ -147,3 +147,4 @@ input{
     padding-left: 20px;
 }
 }
+

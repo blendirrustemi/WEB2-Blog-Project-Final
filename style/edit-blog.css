@@ -12,9 +12,9 @@ html {
 body {
     margin: 0;
     padding: 0;
-    padding-top: 150px;
     background: linear-gradient(#282a37, #313e53);
     font-family: 'Poppins', sans-serif;
+    padding-top: 120px;
 }
 /* centering the div */
 .add_post{

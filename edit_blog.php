@@ -1,17 +1,17 @@
 <?php
-    require "common/navbar.php";
+    require "common/navbar.php"; #require the navbar so it can navigate through files
     require "common/database_connect.php";
     
-    if (!$role){
-        header("Location: ../index.php");
+    if (!$role){ #checks if the user has the role of an admin
+        header("Location: ../index.php"); #if not redirect to home page
     }
     
-    if ( isset( $_GET['id'] ) ) {
-        $p_id = htmlentities( mysqli_real_escape_string( $db, $_GET['id'] ) );
+    if ( isset( $_GET['id'] ) ) { #checks if it has received an id from the get method
+        $p_id = htmlentities( mysqli_real_escape_string( $db, $_GET['id'] ) ); #assigns the database with id to the p_id variable
         
-        $query = "SELECT * FROM posts WHERE P_ID='$p_id'";
-        $result = mysqli_query( $db, $query );
-        $post = mysqli_fetch_assoc( $result );
+        $query = "SELECT * FROM posts WHERE P_ID='$p_id'"; #query to select all the posts with the id we have clicked
+        $result = mysqli_query( $db, $query ); # executes the query to the database
+        $post = mysqli_fetch_assoc( $result ); #assigns the result got from database to the variable $post
 
     }
 ?>
@@ -27,15 +27,15 @@
 
             <div class="input_field">
                 <label for="title">Change the Title:</label>
-                <input type="text" name="title" id="title" value="<?php echo $post['Title']?>">
+                <input type="text" name="title" id="title" value="<?php echo $post['Title'] #title of the blog from the database?>">
             </div>
 
             <div class="input_field">
                 <label for="content">Change the Content:</label>
-                <textarea name="content" id="content" rows="6"><?php echo $post['Content']?></textarea>
+                <textarea name="content" id="content" rows="6"><?php echo $post['Content'] #content of the blog from the database?></textarea>
             </div>
 
-            <input type="hidden" name="hid" value="<?php echo $p_id?>">
+            <input type="hidden" name="hid" value="<?php echo $p_id #helps to identify the id of the post when selected?>">
 
             <input type="submit" name="submit" value="Post" class="buton">
         </form>

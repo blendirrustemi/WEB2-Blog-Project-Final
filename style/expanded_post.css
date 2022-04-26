@@ -12,9 +12,10 @@
   body {
     margin: 0;
     padding: 0;
-    padding-top: 150px;
     background-image: url(pics/02.jpg);
+    background-color: #282a37;
     background-repeat: no-repeat;
+    padding-top: 120px; 
   }
   /* setting the font family like in every other page  */
   body,
@@ -102,8 +103,27 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.post-comment{
+.single-comment{
     font-weight: 300;
     font-family: 'Poppins', sans-serif;
     color: #4286c7;
-}
+    background: #313e53;
+    border-radius: 10px;
+    padding-top: -5px;
+    padding-left: 12px;
+    margin: 5px;
+  }
+
+  .post-user{
+    font-size: 18px;
+  }
+
+  .post-comment{
+    color: #fff;
+    margin-top: -10px;
+    font-size: 14px;
+  }
+
+  hr{
+    opacity: 0.3;
+  }

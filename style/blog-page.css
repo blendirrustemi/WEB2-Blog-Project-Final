@@ -11,7 +11,11 @@
   body {
     margin: 0;
     padding: 0;
-    background: #3b4a63; /*#303242
+    background: #3b4a63; 
+    padding-top: 100px;
+    
+    /*#303242
+    
     /* background: linear-gradient(#fff, rgb(197, 196, 196)); */
   }
   /* Setting the font family for the entire page */
@@ -55,11 +59,12 @@
   .posts {
     padding: 1em;
     border-radius: 15px;
+    /* height: 250px; */
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     /* flex: 1 1 45%; */
-    width: clamp(300px, 45%, 90%);
+    width: clamp(300px, 35%, 90%);
     background-color: #313645;
     box-shadow: -5px 5px 10px #33435c;
     color: white;
@@ -83,18 +88,19 @@
     color: #4286c7;
 }
 /* Selecting the text anchor within the REad more div. */
-.btn-comment a{
+.read{
   color: white;
   font-weight: 800;
   float: left;
+  margin-top: 20px;
 }
 /* The styling for the arrow closeby the Read more sign
    It has to appear inline with the Read more text */
-.btn-comment img{
+img{
   width: 40px;
   float:right;
   position: relative;
-  left: 10px;
+  /* left: 10px; */
 }
 /* Styling of the Read more sign to make it look like a button */
 .btn-comment{

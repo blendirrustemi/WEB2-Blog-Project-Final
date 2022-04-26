@@ -11,7 +11,6 @@
 
 </head>
 <body>
-
     <div class="main-cont">
         <div class="page-header">
         <h2>A Community of Bloggers</h2>
@@ -47,9 +46,11 @@
                         <p><?php echo $blog_post['Content'] ?></p>
                     </div> -->
 
+                    <a class="read" href="post.php?id=<?php echo $blog_post['P_ID'] ?>">
                     <div class="btn-comment">
-                        <a href="post.php?id=<?php echo $blog_post['P_ID'] ?>">Read More <img src="style/pics/arrow2.png"> </a>
+                        Read More <img src="style/pics/arrow2.png"> 
                     </div>
+                    </a>
 
                 </div>
             </div>

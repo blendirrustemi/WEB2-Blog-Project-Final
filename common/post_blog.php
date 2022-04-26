@@ -1,20 +1,20 @@
 <?php
 
-    require "sessions.php";
+    require "sessions.php"; #requires sessions to use its values
 
-    if (!$role){
+    if (!$role){ #checks if the user is not an admin then redirect to the home page, he/she doesnt have access on this page
         header("Location: ../index.php");
     }
 
-    if (isset( $_POST["submit"])){
-        require "database_connect.php";
+    if (isset( $_POST["submit"])){ #checks if the form has sent the post with the submit name
+        require "database_connect.php";  #require the database
 
-        $title = htmlentities( mysqli_real_escape_string( $db, $_POST["title"] ) );
-        $content = htmlentities( mysqli_real_escape_string( $db, $_POST["content"] ) );
+        $title = htmlentities( mysqli_real_escape_string( $db, $_POST["title"] ) ); #saves the data received with the database to the $title variable
+        $content = htmlentities( mysqli_real_escape_string( $db, $_POST["content"] ) ); #saves the data received with the database to the $content variable
 
-        $insert_query = "insert into posts(Title, Content) values('$title', '$content')"; 
-        mysqli_query($db, $insert_query);
-        header("Location: ../index.php");
+        $insert_query = "insert into posts(Title, Content) values('$title', '$content')";  #query to insert the title and content of the blog
+        mysqli_query($db, $insert_query); #execution of the query to the database
+        header("Location: ../index.php"); #redirect to the homepage
     }
 
 ?> 

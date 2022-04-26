@@ -1,20 +1,20 @@
 <?php
 
-    require "common/navbar.php";
+    require "common/navbar.php"; #requires the navbar from the common folder
 
-    if (!$role){
-        header("Location: ../index.php");
+    if (!$role){ #checks if the user is an admin, if not it redirects it to the homepage
+        header("Location: index.php");
     }
 
-    if (isset( $_POST["submit"])){
-        require "common/database_connect.php";
+    if (isset( $_POST["submit"])){ #checks if the form submitted is from the name submit button
+        require "common/database_connect.php"; #requires the database from the common folder
 
-        $title = htmlentities( mysqli_real_escape_string( $db, $_POST["title"] ) );
-        $content = htmlentities( mysqli_real_escape_string( $db, $_POST["content"] ) );
+        $title = htmlentities( mysqli_real_escape_string( $db, $_POST["title"] ) ); #saves the title variable from the user after it has sanitized the inputs
+        $content = htmlentities( mysqli_real_escape_string( $db, $_POST["content"] ) ); #saves the content variable from the user after it has sanitized the inputs
 
-        $insert_query = "insert into posts(Title, Content) values('$title', '$content')"; 
-        mysqli_query($db, $insert_query);
-        header("Location: index.php");
+        $insert_query = "insert into posts(Title, Content) values('$title', '$content')"; #query to insert the values from the user to the databse for the blog post
+        mysqli_query($db, $insert_query); #executes the above query to the database
+        header("Location: index.php"); #redirects to the homepage
     }
 
 ?> 
@@ -36,12 +36,10 @@
         <form action="" method="post">
 
             <div class="input_field">
-                <!-- <label for="title">Add a Title:</label> -->
                 <input type="text" name="title" id="title" placeholder="Add a Title">
             </div>
 
             <div class="input_field">
-                <!-- <label for="content">Add Content:</label> -->
                 <textarea name="content" id="content" rows="6" placeholder="Add Content"></textarea>
             </div>
 

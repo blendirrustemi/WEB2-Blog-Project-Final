@@ -12,10 +12,10 @@
 </head>
 <body>
 
-    <?php require "common/navbar.php"?>
+    <?php require "common/navbar.php" #requires the navbar to navigate easier through the pages?>
 
     <div class="main">
-        <?php require "blog_page.php" ?>
+        <?php require "blog_page.php" #requires the blog_page so it can display all the blogs?>
     </div>
 </body>
 </html>

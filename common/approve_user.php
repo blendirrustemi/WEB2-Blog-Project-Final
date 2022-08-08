@@ -1,6 +1,6 @@
 <?php
     require "database_connect.php";# Requires the database from its folder
-    require "../manage_users.php";# Requires manage_users.php file from the WEB2-Blog... folder
+    // require "../manage_users.php";# Requires manage_users.php file from the WEB2-Blog... folder
      
     if (!$role){# Condition to check if the user has a role of Admin set on the sessions file
         header("Location: index.php"); # If the user doesnt have the role Admin it redirects to the home page (index.php)

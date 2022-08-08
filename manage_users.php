@@ -73,7 +73,7 @@
             </div>
         </div>
     
-        <?php endforeach#ends the forloop, so all the above elements are created for each individual user from the database?>
+        <?php endforeach;#ends the forloop, so all the above elements are created for each individual user from the database?>
     </div>
 </body>
 </html>

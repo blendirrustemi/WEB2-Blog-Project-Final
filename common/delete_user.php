@@ -1,6 +1,5 @@
 <?php
     require "database_connect.php"; #Requires database so it can use its values
-    require "../manage_users.php";
     
     if (!$role){ # Condition to check if the user has a role of Admin set on the sessions file
         header("Location: ../index.php");  #If the user doesnt have the role Admin it redirects to the home page (index.php)

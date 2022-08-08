@@ -34,7 +34,7 @@ CREATE TABLE `comments` (
   `C_ID` int(11) NOT NULL,
   `Comment` text NOT NULL,
   `P_ID` int(11) DEFAULT NULL,
-  `U_ID` int(11) NOT NULL,
+  -- `U_ID` int(11) NOT NULL,
   `username` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -42,14 +42,14 @@ CREATE TABLE `comments` (
 -- Dumping data for table `comments`
 --
 
-INSERT INTO `comments` (`C_ID`, `Comment`, `P_ID`, `U_ID`, `username`) VALUES
-(16, 'WOOO COOl', 28, 0, 'detib'),
-(17, 'Nice Blog Man', 26, 0, 'detib'),
-(18, 'NICE ONE', 28, 0, 'blendi'),
-(19, 'GOOD TO KNOW', 27, 0, 'blendi'),
-(20, 'JavaScript is used to develop interactive web applications. JavaScript can power featured like interactive images, carousels, and forms. The language can be used with back-end frameworks like Node. js to power the mechanics behind a web page, such as form processing and payments', 28, 0, 'dea'),
-(21, 'i love python', 27, 0, 'dea'),
-(22, 'wowowoow', 26, 0, 'dea');
+INSERT INTO `comments` (`C_ID`, `Comment`, `P_ID`, `username`) VALUES
+(16, 'WOOO COOl', 28, 'detib'),
+(17, 'Nice Blog Man', 26,'detib'),
+(18, 'NICE ONE', 28, 'blendi'),
+(19, 'GOOD TO KNOW', 27, 'blendi'),
+(20, 'JavaScript is used to develop interactive web applications. JavaScript can power featured like interactive images, carousels, and forms. The language can be used with back-end frameworks like Node. js to power the mechanics behind a web page, such as form processing and payments', 28, 'dea'),
+(21, 'i love python', 27, 'dea'),
+(22, 'wowowoow', 26, 'dea');
 
 -- --------------------------------------------------------
 
